@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import './Financial.css';
 
-const dataSetsTab1 = [
+// Register necessary components and plugins
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartDataLabels);
+
+const dataSetsConsolidated = [
   { label: 'Revenue(₹ in Crore)', data: [2594, 3048, 3520, 3479, 3375], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
   { label: 'Profit After Tax (PAT)(₹ in Crore)', data: [106, 260, 210, 97, 35], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
   { label: 'EBITDA(₹ in Crore)', data: [271, 489, 422, 248, 154], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
@@ -12,7 +17,8 @@ const dataSetsTab1 = [
   { label: 'Debt Equity Ratio(₹ in Crore)', data: [1.00, 0.41, 0.25, 0.33, 0.44], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
   { label: 'ROE(%)', data: [15, 25, 19, 8, 0], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
 ];
-const dataSetsTab2 = [
+
+const dataSetsStandalone = [
   { label: 'Revenue(₹ in Crore)', data: [1360, 1570, 1973, 2155, 2231], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
   { label: 'Profit After Tax (PAT)(₹ in Crore)', data: [77, 188, 186, 130, 103], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
   { label: 'EBITDA(₹ in Crore)', data: [176, 321, 307, 228, 175], years: ['FY2020', 'FY2021', 'FY2022', 'FY2023', 'FY2024'] },
@@ -22,7 +28,11 @@ const dataSetsTab2 = [
 ];
 
 const Financial = () => {
-  const [activeTab, setActiveTab] = useState('tab1');
+  const [activeTab, setActiveTab] = useState('consolidated');
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   const renderCharts = (dataSets) => {
     return dataSets.map((dataset, index) => {
@@ -33,24 +43,24 @@ const Financial = () => {
             label: dataset.label,
             backgroundColor: dataset.data.map((_, i) => {
               if (i === dataset.data.length - 1) {
-                return 'rgba(88,89,91,1)'; // Different color for the last bar
+                return 'rgba(88,89,91,1)'; // Last bar color
               } else {
-                return 'rgba(164,166,169,1)'; // Same color for other bars
+                return 'rgba(164,166,169,1)'; // Default color for other bars
               }
             }),
             borderColor: 'rgba(88,89,91,1)',
             borderWidth: 1,
             hoverBackgroundColor: 'rgba(88,89,91,1)',
             hoverBorderColor: 'rgba(88,89,91,1)',
-            borderRadius: 10,
+            borderRadius: 10, // Add rounded corners to bars
             data: dataset.data,
-            barThickness: 18,
+            barThickness: 18, // Adjust bar thickness for spacing
           },
         ],
       };
 
       const options = {
-        indexAxis: 'y',
+        indexAxis: 'y', // Make bars horizontal
         plugins: {
           legend: {
             display: false,
@@ -76,34 +86,33 @@ const Financial = () => {
           x: {
             beginAtZero: true,
             ticks: {
-              display: false,
+              display: false, // Hide the x-axis labels
             },
             grid: {
-              display: false,
+              display: false, // Remove x-axis grid lines
             },
           },
           y: {
             grid: {
-              display: false,
+              display: false, // Remove y-axis grid lines
             },
           },
         },
         layout: {
           padding: {
-            left: 20, // Adjust top padding as needed
-            right: 55, 
-            top:50,
-            bottom:40,// Adjust bottom padding as needed
+            top: 40,
+            bottom: 35,
+            left:10,
+            right:35,
           },
         },
         maintainAspectRatio: false,
-        responsive: true, // Ensure chart responsiveness
       };
 
       return (
-        <div key={index} style={{ padding: '8px', height: '400px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div key={index} style={{ padding: '8px', height: '380px', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <h4 style={{ textAlign: 'center', marginBottom: '10px' }}>{dataset.label}</h4>
-          <div style={{ flexGrow: 1, minWidth: '300px', width: '90%' }}> {/* Ensure minimum width for responsiveness */}
+          <div style={{ flexGrow: 1, width: '80%' }}>
             <Bar data={data} options={options} />
           </div>
         </div>
@@ -113,18 +122,12 @@ const Financial = () => {
 
   return (
     <div className='marginal'>
-      <h2 className='text-center text-2xl font-bold text-[#34434d] py-8'>Financial Highlights</h2>
-      <div className='flex justify-center mb-4'>
-        <button
-          className={`px-4 py-2 mx-2 font-bold border ${activeTab === 'tab1' ? 'bg-[#0098b6] text-[#202128]' : 'bg-[#e2e3e4] text-[#202128] border-[#e2e3e4]'}`}
-          onClick={() => setActiveTab('tab1')}
-        >
+      <h2 className='text-center text-2xl font-bold text-[#34434D] py-8'>Financial Highlights</h2>
+      <div className='tabs'>
+        <button className={`tab ${activeTab === 'consolidated' ? 'active' : ''}`} onClick={() => handleTabClick('consolidated')}>
           Consolidated
         </button>
-        <button
-          className={`px-4 py-2 mx-2 font-bold border ${activeTab === 'tab2' ? 'bg-[#0098b6] text-[#202128]' : 'bg-[#e2e3e4] text-[#202128] border-[#e2e3e4]'}`}
-          onClick={() => setActiveTab('tab2')}
-        >
+        <button className={`tab ${activeTab === 'standalone' ? 'active' : ''}`} onClick={() => handleTabClick('standalone')}>
           Standalone
         </button>
       </div>
@@ -165,9 +168,9 @@ const Financial = () => {
         sliderClass=""
         slidesToSlide={1}
         swipeable
-        style={{ width: '70%' }} // Adjust the width of the carousel
+        style={{ width: '70%' }} // Adjust the width as needed
       >
-        {activeTab === 'tab1' ? renderCharts(dataSetsTab1) : renderCharts(dataSetsTab2)}
+        {renderCharts(activeTab === 'consolidated' ? dataSetsConsolidated : dataSetsStandalone)}
       </Carousel>
     </div>
   );

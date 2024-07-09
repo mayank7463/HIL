@@ -18,7 +18,7 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
     <div>
-      {/* <BirlaGroup/>
+      <BirlaGroup/>
       <AboutHil/>
       <ValueCreation/>
       <ChairmanMessage/>
@@ -30,8 +30,7 @@ function App() {
       <Governance/>
       <BoardOfDirectors/>
       <Awards/>
-      <Financial/> */}
-      <Navbar/>
+      <Financial/> 
     </div>
   )
 }

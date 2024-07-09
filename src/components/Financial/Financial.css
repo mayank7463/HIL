@@ -9,3 +9,30 @@
 .react-multi-carousel-track li{
     list-style-type: none;
 }
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+    margin: 0 2px;
+  }
+  
+  .tab.active {
+    background-color: #0098b6;
+    color: white;
+  }
+  
+  .tab:hover {
+    background-color: #0098b6;
+    color: white;
+  }
+  
