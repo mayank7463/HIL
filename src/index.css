@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.marginal{
+  width: 86%;
+  margin: auto;
+}
