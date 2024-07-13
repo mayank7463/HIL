@@ -122,7 +122,7 @@ const Financial = () => {
 
   return (
     <div className='marginal'>
-      <h2 className='text-center text-2xl font-bold text-[#34434D] py-8'>Financial Highlights</h2>
+      <h2 className='text-center text-3xl font-extrabold text-[#58595b] py-8'>Financial Highlights</h2>
       <div className='tabs'>
         <button className={`tab ${activeTab === 'consolidated' ? 'active' : ''}`} onClick={() => handleTabClick('consolidated')}>
           Consolidated

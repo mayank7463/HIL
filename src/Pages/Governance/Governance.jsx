@@ -93,8 +93,8 @@ function Governance() {
                     about stakeholder concerns and aim to
                     resolve matters efficiently.</p>
                 </div>
-               <div>
-                 <img src="" alt="" />
+               <div className='w-[70%]'>
+                 <img src="./Governance/gov-10.jpg" alt="" />
                </div>
           </div>
           <div className='py-4'>

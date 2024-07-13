@@ -28,7 +28,7 @@ function AboutHil() {
                     proposition closer to our
                     consumers, globally.</p>
                 </div>
-                <div >
+                <div className='w-[80%]'>
                     <img src="./AboutHil/hil-1.jpg" alt="" />
                 </div>
             </div>
@@ -47,7 +47,7 @@ function AboutHil() {
                      <img src="./AboutHil/hil-3.jpg" alt=""  className='w-[12%]' />
                      <p className='py-4 font-bold'>Mission</p>
                      <ul className='py-4'>
-                        <li>To deliver a diversified portfolio
+                     <li>To deliver a diversified portfolio
                             of eco-friendly products and
                             solutions, fuelled by innovation</li>
                         <li>To build a strong corporate brand
@@ -62,7 +62,7 @@ function AboutHil() {
                         health and environment</p>
                  </div>
             </div>
-            
+{/*             
             <div>
             <img src="./AboutHil/hil-4.jpg" alt="" className='w-[9%]'/> 
             <p className='py-4 font-bold pl-5'>Values</p>
@@ -92,13 +92,13 @@ function AboutHil() {
                         <p>Respect</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
-                 <div>
+                 <div className='w-[87%]'>
                      <img src="./AboutHil/hil-11.jpg" alt="" />
                  </div>
             </div>
-            <div>
+            <div className='bg-[#edece9] p-8'>
                 <p className='py-4 font-bold text-xl'>Strengths</p>
                 <div className='grid lg:grid-cols-6 sm:grid-cols-1 gap-4 py-4'>
                     <div>

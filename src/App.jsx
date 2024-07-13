@@ -14,24 +14,38 @@ import BoardOfDirectors from './Pages/BoardOfDirectors/BoardOfDirectors';
 import Awards from './Pages/Awards/Awards';
 import Financial from './components/Financial/Financial';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import HomePage from './Pages/Homepage/HomePage';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <BirlaGroup/>
-      <AboutHil/>
-      <ValueCreation/>
-      <ChairmanMessage/>
-      <CeoMessage/>
-      <Portfolio/>
-      <Polytech/>
-      <Technology/>
-      <HumanCapital/>
-      <Governance/>
-      <BoardOfDirectors/>
-      <Awards/>
-      <Financial/> 
-    </div>
+    <>
+       <BrowserRouter>
+       <Navbar/>
+       <div>
+             <Routes>
+                       <Route path='/' element={<HomePage/>}/>
+                       <Route path='/about' element={<AboutHil/>}/>
+                       <Route path='/ck-birla' element={<BirlaGroup/>}/>
+                       <Route path='/chairman-msg' element={<ChairmanMessage/>}/>
+                       <Route path='/ceo-msg' element={<CeoMessage/>}/>
+                       <Route path='/financial' element={<Financial/>}/>
+                       <Route path='/human-capital' element ={<HumanCapital/>}/>
+                       <Route path='/social' element={<Governance/>}/>
+                       <Route path='/bod' element={<BoardOfDirectors/>}/>
+                       <Route path='/awards' element={<Awards/>}/>
+                       <Route path='/value-creation' element={<ValueCreation/>}/>
+                       <Route path='/portfolio' element={<Portfolio/>}/>
+                       <Route path='/polytech' element={<Polytech/>}/>
+                      
+                       
+             </Routes>
+       </div>
+       <Footer/>
+       </BrowserRouter>
+    </>
   )
 }
 
