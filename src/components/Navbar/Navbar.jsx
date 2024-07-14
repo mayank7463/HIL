@@ -111,7 +111,7 @@ const Navbar = () => {
           <li>
             <a href="#" className="menu-item">Corporate Overview</a>
             <ul className="dropdown-menu">
-              <li><a href="/ck-birla" className="menu-item">The CK Birla Group</a></li>
+              <li><Link to={'/ck-birla'} className="menu-item">The CK Birla Group</Link></li>
               <li className="dropdown dropdown-right">
                 <a href="#" className="menu-item expand-btn">About us</a>
                 <ul className="dropdown-menu menu-right sample">
