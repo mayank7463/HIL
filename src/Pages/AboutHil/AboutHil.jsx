@@ -32,7 +32,7 @@ function AboutHil() {
                     <img src="./AboutHil/hil-1.jpg" alt="" />
                 </div>
             </div>
-            <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-8 my-4'>
+            <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-8 my-4'>
                  <div>
                     <img src="./AboutHil/hil-2.jpg" alt=""  className='w-[12%]' />
                     <p className='py-4 font-bold'>Vision</p>
@@ -60,6 +60,36 @@ function AboutHil() {
                         standards of quality, corporate
                         social responsibility, safety,
                         health and environment</p>
+                 </div>
+                 <div>
+                     <img src="./AboutHil/hil-4.jpg" alt=""  className='w-[12%]' /> 
+                     <p className='py-4 font-bold'>Values</p>
+                     <div className='grid lg:grid-cols-2 sm:grid-cols-1'>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-5.jpg" alt="" />
+                        <p>Excellence</p>
+                    </div>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-6.jpg" alt="" />
+                        <p>Innovation</p>
+                    </div>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-7.jpg" alt="" />
+                        <p>Teamwork</p>
+                    </div>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-8.jpg" alt="" />
+                        <p>Integrity</p>
+                    </div>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-9.jpg" alt="" />
+                        <p>Accountability</p>
+                    </div>
+                    <div className='w-[30%]'>
+                        <img src="./AboutHil/hil-10.jpg" alt="" />
+                        <p>Respect</p>
+                    </div>
+                </div>
                  </div>
             </div>
 {/*             

@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import ReadMoreButton from '../ReadMoreButton/ReadMoreButton';
 const Capslider = () => {
   const settings = {
     dots: true,
@@ -35,7 +36,7 @@ const Capslider = () => {
   };
 
   return (
-   <div>
+   <div className='mt-16'>
          <motion.div initial={{ x:"30%", opacity: 0 }}
     whileInView={{x:0, opacity: 1 }}
     transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -103,7 +104,9 @@ const Capslider = () => {
         </Slider>
       </div>
     </motion.div>
-    
+    <div className='flex justify-center pt-10'>
+         <Link to={'/portfolio'}> <ReadMoreButton/></Link>
+      </div>
    </div>
   );
 };

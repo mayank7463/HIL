@@ -6,3 +6,7 @@
   width: 86%;
   margin: auto;
 }
+
+body{
+  overflow-x: hidden;
+}

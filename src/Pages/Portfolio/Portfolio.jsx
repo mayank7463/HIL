@@ -5,25 +5,11 @@ function Portfolio() {
     <div className='marginal'>
          <div>
              <p className='text-2xl font-bold py-4'>Portfolio of Consumer Offerings</p>
-             <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
-                    <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
-                         <div>
-                              <p>Dedicated to being a
-                              comprehensive provider of
-                              home and building solutions,
-                              we have a portfolio of trusted
-                              brands that have built a strong
-                              consumer connect. Our
-                              commitment to design thinking
-                              and product excellence meets
-                              the evolving needs of our
-                              consumers with an assurance
-                              of superior quality and value.</p>
-                         </div>
-                         <div >
+             <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 pt-8'>
+                     <div >
                               <img src="./portfolio/port-1.jpg" alt="" />
-                         </div>
-                    </div>
+                     </div>   
+                        
                     <div>
                        <img src="./portfolio/port-5.jpg" alt="" />
                     </div>

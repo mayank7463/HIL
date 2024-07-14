@@ -5,19 +5,14 @@ function HumanCapital() {
     <div className='marginal'>
        <div>
             <p className='text-2xl font-medium'>Human Capital</p>
-            <p className='text-2xl py-4'>At HIL, our pursuit of excellence extends far beyond shortterm goals. It revolves around an empowered workforce that
+            <p className='text-2xl  py-4'>At HIL, our pursuit of excellence extends far beyond shortterm goals. It revolves around an empowered workforce that
             is ready to traverse the boundaries of innovative thinking to
             redesign solutions that truly make a difference to the world of
             construction and building solutions.</p>
        </div>
        <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4 py-4'>
-           <div>
-                            <p>We believe in nurturing an inclusive and
-                diverse work culture, where every employee
-                is given the opportunity to grow and flourish.
-                With strategic talent management initiatives,
-                we promote open communication and shape
-                a truly sustainable future.</p>
+            <div>
+               <img src="./Capital/cap-0.jpg" alt="" />
            </div>
            <div>
                <img src="./Capital/cap-1.jpg" alt="" />

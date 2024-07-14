@@ -13,10 +13,10 @@ const CustomPrevArrow = (props) => {
       style={{
         ...style,
         display: 'block',
-        background: '#f47732',
+        background: '#58595b',
         borderRadius: '50%',
-        width: '30px', // Adjust width as needed
-        height: '30px', // Adjust height as needed
+        width: '40px', // Adjust width as needed
+        height: '40px', // Adjust height as needed
       }}
       onClick={onClick}
     >
@@ -33,10 +33,10 @@ const CustomNextArrow = (props) => {
       style={{
         ...style,
         display: 'block',
-        background: '#f47732',
+        background: '#58595b',
         borderRadius: '50%',
-        width: '30px', // Adjust width as needed
-        height: '30px', // Adjust height as needed
+        width: '40px', // Adjust width as needed
+        height: '40px', // Adjust height as needed
       }}
       onClick={onClick}
     >
@@ -44,7 +44,6 @@ const CustomNextArrow = (props) => {
     </button>
   );
 };
-
 
 const Quote = () => {
   const settings = {
@@ -55,7 +54,7 @@ const Quote = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
     responsive: [
@@ -71,33 +70,30 @@ const Quote = () => {
   };
 
   return (
-    <div className='container mx-auto px-12'>
-      <div className='quote-section pt-2'>
-        <div className="carousel-container">
+    <div className='px-4 mt-8'>
+      <div className='quote-section pt-2 '>
+        <div className='carousel-container w-full lg:w-[70%] mx-auto'>
           <Slider {...settings}>
             <div className='p-4'>
-              <h1 className='text-center lg:text-5xl mb-4 font-bold text-[#f47732]'>Chairman’s Message</h1>
-              <div className="slide">
-                <img src="./Ceo/ceo-1.webp" className='object-contain mx-auto' alt="Quote 1" />
+              <h1 className='text-center text-3xl font-extrabold text-[#58595b]'>Chairman’s Message</h1>
+              <div className='slide'>
+                <img src="./Quote/quote-1.webp" className='object-contain mx-auto' alt="Quote 1" />
               </div>
               <div className='flex justify-center mt-8 pb-4'>
-                <Link to={"/chairman-msg"}> <ReadMoreButton/></Link>
+                <Link to={"/chairman-msg"}><ReadMoreButton /></Link>
               </div>
             </div>
-            <div className=' p-4'>
-              <h1 className='text-center lg:text-5xl mb-4 font-bold text-[#f47732]'>CEO’s Message</h1>
-              <div className="slide">
-                <img src="./Chairman/chair-1.webp" className='object-contain mx-auto' alt="Quote 2" />
+            <div className='p-4'>
+              <h1 className='text-center text-3xl font-extrabold text-[#58595b]'>MD & CEO’s Message</h1>
+              <div className='slide'>
+                <img src="./Quote/quote-2.webp" className='object-contain mx-auto' alt="Quote 2" />
               </div>
               <div className='flex justify-center mt-8 pb-4'>
-                <Link to={"/ceo-msg"}> <ReadMoreButton/></Link>
+                <Link to={"/ceo-msg"}><ReadMoreButton /></Link>
               </div>
             </div>
           </Slider>
         </div>
-      </div>
-      <div className='flex justify-center mt-16'>
-        <img src="./Home/home_img-2.png" alt="Home" className='w-full ' />
       </div>
     </div>
   );

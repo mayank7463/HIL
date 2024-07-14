@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ReadMoreButton from '../ReadMoreButton/ReadMoreButton';
+import { Link } from 'react-router-dom';
 
 const AwardsSection = () => {
   const awards = [
@@ -11,7 +12,7 @@ const AwardsSection = () => {
   ];
 
   return (
-   <div>
+   <div className='mt-12'>
         <section className="py-12 px-4 md:px-8 bg-gray-100 my-10 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-extrabold text-[#58595b] text-center mb-8">Our Awards</h2>
@@ -33,7 +34,7 @@ const AwardsSection = () => {
       </div>
     </section>
     <div className='flex justify-center pt-2'>
-          <ReadMoreButton/>
+       <Link to={'/awards'}><ReadMoreButton/></Link>
     </div>
    </div>
   );

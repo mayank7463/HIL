@@ -17,11 +17,8 @@ function HomePage() {
       <HeroSection/>
       <AboutHil/>
       <Capslider/>
-      <div className='flex justify-center pt-10'>
-            <ReadMoreButton/>
-      </div>
+      <Quote/> 
       <AwardsSection/>
-      {/* <Quote/> */}
       <Financial/>
     </div>
   )

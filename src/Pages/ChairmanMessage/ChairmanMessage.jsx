@@ -4,6 +4,7 @@ function ChairmanMessage() {
   return (
     <div className='marginal'>
         <div className='w-90'>
+            <p className='text-2xl font-bold py-4'>Chairman’s Message</p>
              <img src="./Chairman/chair-1.webp" alt="" />
         </div>
         <div>

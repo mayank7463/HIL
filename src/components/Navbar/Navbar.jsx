@@ -173,7 +173,7 @@ const Navbar = () => {
               {/* <li><a href="#" className="menu-item">Item 5</a></li> */}
             </ul>
           </li>
-          <li><a href="#" className="menu-item">Downloads</a></li>
+          {/* <li><a href="#" className="menu-item">Downloads</a></li> */}
         </ul>
       </header>
       

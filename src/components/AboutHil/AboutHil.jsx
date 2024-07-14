@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import ReadMoreButton from '../ReadMoreButton/ReadMoreButton';
+import { Link } from 'react-router-dom';
 
 function AboutHil() {
   const textRef = useRef(null);
@@ -9,7 +10,7 @@ function AboutHil() {
   const imageInView = useInView(imageRef, { once: true });
 
   return (
-    <div>
+    <div className='mt-16'>
       <div className='py-12 px-6 bg-gray-50'>
         <motion.div 
           initial={{ opacity: 0, y: 50 }} 
@@ -48,7 +49,7 @@ function AboutHil() {
         </div>
       </div>
       <div className='flex justify-center mt-4'>
-        <ReadMoreButton />
+          <Link to={'/about'}><ReadMoreButton /></Link>
       </div>
     </div>
   );

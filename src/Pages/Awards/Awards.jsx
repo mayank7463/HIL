@@ -8,20 +8,20 @@ function Awards() {
             <div className='w-[80%]'>
                 <img src="./Awards/award-9.jpg" alt="" />
             </div>
-            <div>
-                 <div className='flex '>
-                     <div className='w-[25%]'>
+            <div className='bg-[#f9f6f6] w-[75%] flex flex-col justify-center items-center p-8'>
+                 <div className='flex justify-center gap-4'>
+                     <div className='w-[30%]'>
                         <img src="./Awards/award-10.jpg" alt="" />
                      </div>
-                     <div className='w-[25%]'>
+                     <div className='w-[30%]'>
                         <img src="./Awards/award-11.jpg" alt="" />
                      </div>
                  </div>
-                 <div className='flex'>
-                     <div className='w-[25%]'>
+                 <div className='flex justify-center gap-4 mt-4'>
+                     <div className='w-[30%]'>
                         <img src="./Awards/award-12.jpg" alt="" />
                      </div>
-                     <div className='w-[25%]'>
+                     <div className='w-[30%]'>
                         <img src="./Awards/award-13.jpg" alt="" />
                      </div>
                  </div> 
