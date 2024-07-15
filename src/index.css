@@ -9,4 +9,9 @@
 
 body{
   overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+bg{
+  border: 1px solid red;
 }
