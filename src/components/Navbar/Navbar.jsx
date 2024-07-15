@@ -133,47 +133,13 @@ const Navbar = () => {
           <li>
             <a href="#" className="menu-item">Financial Statements</a>
             <ul className="dropdown-menu">
-              <li className="dropdown dropdown-right">
-                <a href="#" className="menu-item expand-btn">Standalone</a>
-                <ul className="dropdown-menu menu-left sample">
-                  <li><Link to={'/auditor-report'} className="menu-item">Independent Auditor’s Report</Link></li>
-                  <li><Link to={'/balance-sheet'} className="menu-item">Balance Sheet</Link></li>
-                  <li><Link to={'/profit-loss'} className="menu-item">Statement of Profit and Loss</Link></li>
-                  <li><Link to={'/cash-flow'} className="menu-item">Statement of Cash Flows</Link></li>
-                  <li><Link to={'/change-in-equity'} className="menu-item">Statement of Changes In Equity</Link></li>
-                  <li><Link to={'/financial-stats'} className="menu-item">Notes to the Financial Statements</Link></li>
-                </ul>
-              </li>
-              <li className="dropdown dropdown-right">
-                <a href="#" className="menu-item expand-btn">Consolidated</a>
-                <ul className="dropdown-menu menu-left sample">
-                  <li><Link to={'/ind-auditor'} className="menu-item">Independent Auditor’s Report</Link></li>
-                  <li><Link to={'/balance-sheet'} className="menu-item">Balance Sheet</Link></li>
-                  <li><Link to={'/profit-and-loss'} className="menu-item">Statement of Profit and Loss</Link></li>
-                  <li><Link to={'/cash-flows'} className="menu-item">Statement of Cash Flows</Link></li>
-                  <li><Link to={'/change-in-equity'} className="menu-item">Statement of Changes In Equity</Link></li>
-                  <li><Link to={'/financial-stats'} className="menu-item">Notes to the Financial Statements</Link></li>
-                </ul>
-              </li>
-              <li className="dropdown dropdown-right">
-                <a href="#" className="menu-item expand-btn">Statutory Reports</a>
-                <ul className="dropdown-menu menu-left sample">
-                  <li><a href="#" className="menu-item">Board’s Report & its Annexures</a></li>
-                  <li><a href="#" className="menu-item">Management Discussion and Analysis</a></li>
-                  <li><a href="#" className="menu-item">Corporate Governanace Report</a></li>
-                  <li><a href="#" className="menu-item">Business Responsibility & Sustainability Report</a></li>
-                </ul>
-              </li>
-              <li className="dropdown dropdown-right">
-                <a href="#" className="menu-item expand-btn">Shareholders Information</a>
-                <ul className="dropdown-menu menu-left sample">
-                  <li><Link to={'annual-meeting'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
-                </ul>
-              </li>
-              {/* <li><a href="#" className="menu-item">Item 5</a></li> */}
+              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Standalone</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Consolidated</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Reports.pdf'} className="menu-item">Statutory Reports</Link></li>
+              <li><Link target='_blank' to={'./Pdf/CI.pdf'} className="menu-item">Corporate Information</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
             </ul>
           </li>
-          {/* <li><a href="#" className="menu-item">Downloads</a></li> */}
         </ul>
       </header>
       
