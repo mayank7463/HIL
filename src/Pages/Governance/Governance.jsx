@@ -157,13 +157,13 @@ function Governance() {
                 </div>
             </div>
             <div>
-                <img src="" alt="" />
+                <img src="./Governance/gov-17.jpg" alt="" />
             </div>
          </div>
          <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6 py-4'>
             <div>
                 <div>
-                    <img src="" alt="" />
+                    <img src="./Governance/gov-18.jpg" alt="" />
                 </div>
                 <p className='text-xl font-bold py-4'>Live Love Laugh - rural mental health program</p>
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2 py-4'>
@@ -196,8 +196,8 @@ function Governance() {
                     areas across six locations in India.</p>
             </div>
             <div>
-                <div>
-                    <img src="" alt="" />
+                <div className='w-[87%]'>
+                    <img src="./Governance/gov-19.jpg" alt="" />
                 </div>
                 <p className='text-xl font-bold py-4'>Menstrual health initiative at Chennai</p>
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2 py-4'>
@@ -224,7 +224,7 @@ function Governance() {
          </div>
          <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-4'>
              <div>
-                 <img src="" alt="" />
+                 <img src="./Governance/gov-14.jpg" alt="" />
                  <p className='text-xl font-bold py-4'>Mobile medical unit at Chennai</p>
              </div>
              <div>
@@ -247,7 +247,7 @@ function Governance() {
          <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-6 py-4'>
             <div>
                 <div>
-                    <img src="" alt="" />
+                    <img src="./Governance/gov-15.jpg" alt="" />
                 </div>
                 <p className='text-xl font-bold py-4'>Education initiatives by Child Rights and You (CRY)</p>
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2 py-4'>
@@ -272,7 +272,7 @@ function Governance() {
             </div>
             <div>
                 <div>
-                    <img src="" alt="" />
+                    <img src="./Governance/gov-16.jpg" alt="" />
                 </div>
                 <p className='text-xl font-bold py-4'>Eye care initiatives by LV Prasad Eye Institute</p>
                 <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2 py-4'>
