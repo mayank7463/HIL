@@ -18,6 +18,7 @@ import Footer from './components/Footer/Footer';
 import HomePage from './Pages/Homepage/HomePage';
 import { BrowserRouter, Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
+import FinancialHigh from './Pages/FinancialHigh/FinancialHigh';
 
 function App() {
   return (
@@ -39,6 +40,8 @@ function App() {
                        <Route path='/value-creation' element={<ValueCreation/>}/>
                        <Route path='/portfolio' element={<Portfolio/>}/>
                        <Route path='/polytech' element={<Polytech/>}/>
+                       <Route path='/technology' element={<Technology/>}/>
+                       <Route path='/financial-Highlights' element={<FinancialHigh/>}/>
                       
                        
              </Routes>

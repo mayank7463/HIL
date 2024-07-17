@@ -49,7 +49,7 @@ const Capslider = () => {
                 <img src="./Capslider/caps-2.png"  alt="Roofing Solutions"/>
                 <div className='newsCaption px-4'>
                   <div className="d-flex align-items-center justify-content-between cnt-title">
-                    <h4 className='newsCaption-title smh text-white font-extrabold m-0'>Roofing Solutions</h4>
+                    <h4 className='newsCaption-title smh text-white m-0'>Roofing Solutions</h4>
                   </div>
                 </div>
                 <span className="overlay"></span>

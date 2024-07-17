@@ -77,7 +77,7 @@ const Quote = () => {
             <div className='p-4'>
               <h1 className='text-center text-3xl font-extrabold text-[#58595b]'>Chairman’s Message</h1>
               <div className='slide'>
-                <img src="./Quote/quote-1.webp" className='object-contain mx-auto' alt="Quote 1" />
+                <img src="./Quote/quote-2.webp" className='object-contain mx-auto' alt="Quote 1" />
               </div>
               <div className='flex justify-center mt-8 pb-4'>
                 <Link to={"/chairman-msg"}><ReadMoreButton /></Link>
@@ -86,7 +86,7 @@ const Quote = () => {
             <div className='p-4'>
               <h1 className='text-center text-3xl font-extrabold text-[#58595b]'>MD & CEO’s Message</h1>
               <div className='slide'>
-                <img src="./Quote/quote-2.webp" className='object-contain mx-auto' alt="Quote 2" />
+                <img src="./Quote/quote-1.webp" className='object-contain mx-auto' alt="Quote 2" />
               </div>
               <div className='flex justify-center mt-8 pb-4'>
                 <Link to={"/ceo-msg"}><ReadMoreButton /></Link>

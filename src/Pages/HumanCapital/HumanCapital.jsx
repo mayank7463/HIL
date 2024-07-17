@@ -4,7 +4,7 @@ function HumanCapital() {
   return (
     <div className='marginal'>
        <div>
-            <p className='text-2xl font-medium'>Human Capital</p>
+            <p className='text-2xl  font-bold py-4'>Human Capital</p>
             <p className='text-2xl  py-4'>At HIL, our pursuit of excellence extends far beyond shortterm goals. It revolves around an empowered workforce that
             is ready to traverse the boundaries of innovative thinking to
             redesign solutions that truly make a difference to the world of

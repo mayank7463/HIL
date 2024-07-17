@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -20,11 +20,11 @@ const HeroSection = () => {
        <div className='flex flex-col items-start'>
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Enabling the Future</h1>
           <p className="text-xl md:text-2xl mb-6">HIL Limited Annual Report 2023-24</p>
-          <a href="https://hil.in/wp-content/uploads/2024/07/HIL-Annual-Report-FY-2023-24.pdf">
+          <Link target='_blank' to={"https://hil.in/wp-content/uploads/2024/07/HIL-Annual-Report-FY-2023-24.pdf"}>
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Download Full Report
           </button>
-        </a>
+        </Link>
        </div>
       </div>
     </div>

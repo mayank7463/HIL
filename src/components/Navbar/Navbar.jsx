@@ -110,24 +110,37 @@ const Navbar = () => {
           <li><Link to={'/'} className="menu-item">Home</Link></li>
           <li>
             <a href="#" className="menu-item">Corporate Overview</a>
+            <ul className="dropdown-menu xyz">
+               <div className='flex lg:flex-row flex-col '>
+                    <div>
+                          <li><Link to={'/ck-birla'} className="menu-item">The CK Birla Group</Link></li>
+                          <li><Link to={'/about'} className="menu-item">About HIL</Link></li>
+                          <li><Link to={'/value-creation'} className="menu-item">Legacy of Consistent Value Creation</Link></li>
+                          <li><Link to={'/chairman-msg'} className="menu-item">Chairman’s Message</Link></li>
+                          <li><Link to={'/ceo-msg'} className="menu-item">MD & CEO’s Message</Link></li>
+                          <li><Link Link to={'/financial-Highlights'} className="menu-item">Financial Highlights</Link></li>
+                          <li><Link to={'/portfolio'} className="menu-item">Portfolio of Consumer Offerings</Link></li>
+                         
+                    </div>
+                    <div>
+                         <li><Link to={'/polytech'} className="menu-item">Crestia Polytech (Topline) Acquisition</Link></li>
+                          <li><Link Link to={'/technology'} className="menu-item"> Technology and Digitalisation</Link></li>
+                          <li><Link to={'/human-capital'} className="menu-item">Human Capital</Link></li>
+                          <li><Link to={'/social'} className="menu-item">Environment, Social and Governance</Link></li>
+                          <li><Link to={'/bod'} className="menu-item">Board of Directors</Link></li>
+                          <li><Link to={'/awards'} className="menu-item">Awards and Achievements</Link></li>
+                          <li><Link target='_blank' to={'./Pdf/CI.pdf'} className="menu-item">Corporate Information</Link></li>
+                    </div>
+               </div>
+            </ul>
+          </li>
+          <li>
+            <a href="#" className="menu-item">Statutory Reports</a>
             <ul className="dropdown-menu">
-              <li><Link to={'/ck-birla'} className="menu-item">The CK Birla Group</Link></li>
-              <li className="dropdown dropdown-right">
-                <a href="#" className="menu-item expand-btn">About us</a>
-                <ul className="dropdown-menu menu-right sample">
-                  <li><Link to={'/about'} className="menu-item">About</Link></li>
-                  <li><Link to={'/chairman-msg'} className="menu-item">Chairman’s Message</Link></li>
-                  <li><Link to={'/ceo-msg'} className="menu-item">MD & CEO’s Message</Link></li>
-                  {/* <li><Link to={'/financial'} className="menu-item">Financial Highlights</Link></li> */}
-                  <li><Link to={'/human-capital'} className="menu-item">Human Capital</Link></li>
-                  <li><Link to={'/social'} className="menu-item">Environment, Social and Governance</Link></li>
-                  <li><Link to={'/bod'} className="menu-item">Board of Directors</Link></li>
-                  <li><Link to={'/awards'} className="menu-item">Awards and Achievements</Link></li>
-                </ul>
-              </li>
-              <li><Link to={'/value-creation'} className="menu-item">Legacy of Consistent Value Creation</Link></li>
-              <li><Link to={'/portfolio'} className="menu-item">Portfolio of Consumer Offerings</Link></li>
-              <li><Link to={'/polytech'} className="menu-item">Crestia Polytech (Topline) Acquisition</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Board’s Report & its Annexures</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Management Discussion and Analysis</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Corporate Governanace Report</Link></li>
+              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Business Responsibility & Sustainability Report</Link></li>
             </ul>
           </li>
           <li>
@@ -135,13 +148,12 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Standalone</Link></li>
               <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Consolidated</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Reports.pdf'} className="menu-item">Statutory Reports</Link></li>
-              <li><Link target='_blank' to={'./Pdf/CI.pdf'} className="menu-item">Corporate Information</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
             </ul>
           </li>
+          <li><Link target='_blank' to={'./Pdf/Notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
         </ul>
       </header>
+      
       
     </>
   );

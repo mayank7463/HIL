@@ -5,3 +5,7 @@
 li{
   list-style-type: disc;
 }
+.xyz{
+width: 390% !important;
+  /* background-color: none !important; */
+}

@@ -4,7 +4,7 @@ function ValueCreation() {
   return (
     <div>
        <div className='marginal'>
-           <p className='text-2xl font-medium py-4'>Legacy of Consistent Value Creation</p>
+           <p className='text-2xl  font-bold py-4'>Legacy of Consistent Value Creation</p>
            <div className='my-4'>
               <img src="./ValueCreation/value-1.jpg" alt="" />
            </div>

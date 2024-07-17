@@ -8,26 +8,26 @@ function Technology() {
                 <img src="" alt="" />
             </div>
             <div>
-                  <p className='text-2xl font-medium py-4'>Technology and Digitalisation</p>
+                  <p className='text-2xl font-bold py-4'>Technology and Digitalisation</p>
                      <p className='text-2xl '>Through comprehensive technology adoption across our operations, we
                     are poised to become future-ready. Our emphasis on enhancing every
                     business operation, from sales to marketing, manufacturing and supply
                     chain management has encouraged us to embrace advanced technology
                     solutions and improve process efficiencies. </p>
-                    <p className='text-xl font-bold'>Enablers of Digital Transformation</p>
+                    <p className='text-xl font-bold py-4'>Enablers of Digital Transformation</p>
 
-                    <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-4 my-4'>
-                        <div className='w-[96%]'>
+                    <div className='flex lg:flex-row flex-col'>
+                        <div className='lg:w-[60%] '>
                             <img src="./Technology/tech-1.jpg" alt="" />
                         </div>
-                        <div>
+                        <div className='lg:w-[59%]'>
                             <img src="./Technology/tech-2.jpg" alt="" />
                         </div>
-                        <div className='w-[98%]'>
+                        <div className='lg:w-[60%] '>
                             <img src="./Technology/tech-3.jpg" alt="" />
                         </div>
                     </div>
-                    <div className='grid lg:grid-cols-5 sm:grid-cols-1 my-4 bg-[#e1e2e4] my-4'>
+                    <div className='grid lg:grid-cols-5 sm:grid-cols-1 my-8 space-x-4'>
                         <div className=''>
                             <img src="./Technology/tech-5.jpg" alt="" />
                         </div>
