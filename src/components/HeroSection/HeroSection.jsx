@@ -1,10 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 const HeroSection = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    // Set playback rate
+    video.playbackRate = 0.9; // Slow down to half speed
+
+    // Define the range to loop
+    const startTime = 5; // Start time in seconds
+    const endTime = 8; // End time in seconds
+
+    const handleTimeUpdate = () => {
+      if (video.currentTime >= endTime) {
+        video.currentTime = startTime;
+        video.play();
+      }
+    };
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+    };
+  }, []);
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background video */}
       <video
+        ref={videoRef}
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="./HeroSection/video.webm"
         autoPlay
