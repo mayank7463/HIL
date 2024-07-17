@@ -8,7 +8,7 @@ const HeroSection = () => {
     const video = videoRef.current;
 
     // Set playback rate
-    video.playbackRate = 0.9; // Slow down to half speed
+    video.playbackRate = 0.4; // Slow down to half speed
 
     // Define the range to loop
     const startTime = 5; // Start time in seconds
