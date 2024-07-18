@@ -129,7 +129,7 @@ const Navbar = () => {
                           <li><Link to={'/social'} className="menu-item">Environment, Social and Governance</Link></li>
                           <li><Link to={'/bod'} className="menu-item">Board of Directors</Link></li>
                           <li><Link to={'/awards'} className="menu-item">Awards and Achievements</Link></li>
-                          <li><Link target='_blank' to={'./Pdf/CI.pdf'} className="menu-item">Corporate Information</Link></li>
+                          <li><Link target='_blank' to={'./Pdf/corporate.pdf'} className="menu-item">Corporate Information</Link></li>
                     </div>
                </div>
             </ul>
@@ -137,10 +137,10 @@ const Navbar = () => {
           <li>
             <a href="#" className="menu-item">Statutory Reports</a>
             <ul className="dropdown-menu">
-              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Board’s Report & its Annexures</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Management Discussion and Analysis</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Corporate Governanace Report</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Business Responsibility & Sustainability Report</Link></li>
+              <li><Link target='_blank' to={'./Pdf/board-report.pdf'} className="menu-item">Board’s Report & its Annexures</Link></li>
+              <li><Link target='_blank' to={'./Pdf/management.pdf'} className="menu-item">Management Discussion and Analysis</Link></li>
+              <li><Link target='_blank' to={'./Pdf/corporate-gov.pdf'} className="menu-item">Corporate Governanace Report</Link></li>
+              <li><Link target='_blank' to={'./Pdf/brsr.pdf'} className="menu-item">Business Responsibility & Sustainability Report</Link></li>
             </ul>
           </li>
           <li>
