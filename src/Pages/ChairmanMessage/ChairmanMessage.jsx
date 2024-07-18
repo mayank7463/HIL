@@ -5,7 +5,7 @@ function ChairmanMessage() {
     <div className='marginal'>
         <div className='w-90'>
             <p className='text-2xl font-bold py-4'>Chairman’s Message</p>
-             <img src="./Chairman/chair-1.webp" alt="" />
+             <img src="./Quote/quote-2.webp" alt="" />
         </div>
         <div>
             <p className='text-xl font-bold py-4'>Dear Shareholders,</p>

@@ -5,7 +5,7 @@ function CeoMessage() {
     <div className='marginal'>
          <div>
              <p className='text-2xl font-bold py-4'>MD & CEO’s Message</p>
-             <img src="./Ceo/ceo-1.webp" alt="" />
+             <img src="./Quote/quote-1.webp" alt="" />
          </div>
          <div>
             <p className='text-xl font-bold py-4'>Dear Shareholders</p>
