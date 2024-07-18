@@ -150,7 +150,7 @@ const Navbar = () => {
               <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Consolidated</Link></li>
             </ul>
           </li>
-          <li><Link target='_blank' to={'./Pdf/Notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
+          <li><Link target='_blank' to={'./Pdf/notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
         </ul>
       </header>
       
