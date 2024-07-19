@@ -26,11 +26,11 @@ function Governance() {
                     <span className='bg-[#807f7f] text-white'>Renewable energy mix</span>
                 </div>
                 <div>
-                    <p className='text-3xl font-extrabold py-4'>2576<sub> tonnes</sub></p>
+                    <p className='text-3xl font-extrabold py-4'>2576<span className='text-xl font-extrabold'> tonnes</span></p>
                     <span className='bg-[#807f7f] text-white'>CO2e emissions mitigated </span>
                 </div>
                 <div>
-                    <p className='text-3xl font-extrabold py-4'>47,424<sub> kilolitres</sub></p>
+                    <p className='text-3xl font-extrabold py-4'>47,424<span className='text-xl font-extrabold'> kilolitres</span></p>
                     <span className='bg-[#807f7f] text-white'>Average age of employees</span>
                 </div>
            </div>
@@ -133,7 +133,7 @@ function Governance() {
                         <span className='bg-[#807f7f] text-white'> Direct beneficiaries</span>
                     </div>
                     <div>
-                        <p className='text-3xl font-extrabold py-4'>₹4<sub> crore</sub></p>
+                        <p className='text-3xl font-extrabold py-4'>₹4<span className='text-xl font-extrabold'> crore</span></p>
                         <span className='bg-[#807f7f] text-white'>Average tenure of employees</span>
                     </div>
                 </div>
