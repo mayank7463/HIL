@@ -146,8 +146,8 @@ const Navbar = () => {
           <li>
             <a href="#" className="menu-item">Financial Statements</a>
             <ul className="dropdown-menu">
-              <li><Link target='_blank' to={'./Pdf/Standalone.pdf'} className="menu-item">Standalone</Link></li>
-              <li><Link target='_blank' to={'./Pdf/Consolidated.pdf'} className="menu-item">Consolidated</Link></li>
+              <li><Link target='_blank' to={'./Pdf/04 HIL Standalone 03.07.2024.pdf'} className="menu-item">Standalone</Link></li>
+              <li><Link target='_blank' to={'./Pdf/05 HIL Consol 03.07.2024.pdf'} className="menu-item">Consolidated</Link></li>
             </ul>
           </li>
           <li><Link target='_blank' to={'./Pdf/notice.pdf'} className="menu-item">Notice of 77th Annual General Meeting</Link></li>
